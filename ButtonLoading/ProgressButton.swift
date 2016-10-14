@@ -11,11 +11,11 @@ import UIKit
 
 class ProgressButton: UIButton, RectangleProtocol, OvalProtocol {
     
-    var timer: Timer?
-    var color: UIColor!
-    var rectangleLayer = RectangleLayer()
-    var ovalLayer = OvalLayer()
-    var labelLayer = LabelLayer()
+    private var timer: Timer?
+    private var color: UIColor!
+    private var rectangleLayer = RectangleLayer()
+    private var ovalLayer = OvalLayer()
+    private var labelLayer = LabelLayer()
     var cornerRadius: CGFloat! {
         get {
             return rectangleLayer.initialCornerRadius
@@ -34,8 +34,8 @@ class ProgressButton: UIButton, RectangleProtocol, OvalProtocol {
             ovalLayer.loading()
         }
     }
-    var fontTitle: UIFont!
-    var fontColor: UIColor!
+    private var fontTitle: UIFont!
+    private var fontColor: UIColor!
     
     override func awakeFromNib() {
         super.awakeFromNib()
