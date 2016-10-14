@@ -9,7 +9,7 @@
 import UIKit
 
 class ProgressButton: UIButton, RectangleProtocol, OvalProtocol {
-    
+
     var timer: Timer?
     var color: UIColor!
     var rectangleLayer: RectangleLayer!
@@ -80,7 +80,6 @@ class ProgressButton: UIButton, RectangleProtocol, OvalProtocol {
     //MARK: - RectangleProtocol methods
     
     func rectangleAnimationDidStop() {
-        adjustMochTimer() //Downloading moch
         ovalLayer.fadeOut()
         labelLayer.show()
     }
@@ -95,22 +94,6 @@ class ProgressButton: UIButton, RectangleProtocol, OvalProtocol {
         })
     }
     
-    //MARK: - Downloading moch
-    
-    func adjustMochTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 0.015,
-                                     target: self,
-                                     selector: #selector(ProgressButton.slowIncrementor),
-                                     userInfo: nil,
-                                     repeats: true)
-    }
-    
-    func slowIncrementor() {
-        if progress == 99 {
-            timer?.invalidate()
-        }
-        progress += 1
-    }
 
 }
 

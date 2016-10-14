@@ -11,14 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet var button: ProgressButton!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
+    var timer: Timer!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -26,8 +19,25 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTap(sender: AnyObject?) {
         button.animate()
+        adjustMochTimer() // Moch
     }
     
+    //MARK: - Downloading moch
+    
+    func adjustMochTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 0.015,
+                                     target: self,
+                                     selector: #selector(ViewController.slowIncrementor),
+                                     userInfo: nil,
+                                     repeats: true)
+    }
+    
+    func slowIncrementor() {
+        if button.progress == 99 {
+            timer?.invalidate()
+        }
+        button.progress += 1
+    }
 
 }
 

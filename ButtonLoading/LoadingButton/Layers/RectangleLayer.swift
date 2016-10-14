@@ -23,6 +23,10 @@ class RectangleLayer: CAShapeLayer, CAAnimationDelegate {
         super.init()
     }
     
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     func fillProperties(parentBounds: CGRect, color: UIColor) {
         self.parentBounds = parentBounds
         frameRect = CGRect(x: 0, y: parentBounds.size.height/4, width: parentBounds.size.width, height: parentBounds.size.height/2)
@@ -30,14 +34,6 @@ class RectangleLayer: CAShapeLayer, CAAnimationDelegate {
         
         path = rectangle.cgPath
         fillColor = color.cgColor
-    }
-    
-    override func draw(in ctx: CGContext) {
-        
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     var rectangle: UIBezierPath {
