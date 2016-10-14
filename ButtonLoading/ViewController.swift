@@ -13,6 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet var button: ProgressButton!
     var timer: Timer!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        button.cornerRadius = 10.0
+    }
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }

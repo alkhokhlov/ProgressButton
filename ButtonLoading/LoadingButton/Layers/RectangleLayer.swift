@@ -14,6 +14,7 @@ protocol RectangleProtocol: class {
 
 class RectangleLayer: CAShapeLayer, CAAnimationDelegate {
     
+    var initialCornerRadius: CGFloat = 1.0
     var parentBounds: CGRect!
     var frameRect: CGRect!
     var frameSquare: CGRect!
@@ -37,6 +38,10 @@ class RectangleLayer: CAShapeLayer, CAAnimationDelegate {
     }
     
     var rectangle: UIBezierPath {
+        return UIBezierPath(roundedRect: frameRect, cornerRadius: initialCornerRadius)
+    }
+    
+    var roundedRectangle: UIBezierPath {
         return UIBezierPath(roundedRect: frameRect, cornerRadius: frameRect.size.height/2)
     }
     
@@ -45,14 +50,25 @@ class RectangleLayer: CAShapeLayer, CAAnimationDelegate {
     }
     
     func animate() {
+        let animationRoundedRectangle = CABasicAnimation(keyPath: "path")
+        animationRoundedRectangle.fromValue = rectangle.cgPath
+        animationRoundedRectangle.toValue = roundedRectangle.cgPath
+        animationRoundedRectangle.beginTime = 0.0
+        animationRoundedRectangle.duration = 0.4
+        
         let animationSquare = CABasicAnimation(keyPath: "path")
-        animationSquare.delegate = self
-        animationSquare.fromValue = rectangle.cgPath
+        animationSquare.fromValue = roundedRectangle.cgPath
         animationSquare.toValue = roundedSquare.cgPath
+        animationSquare.beginTime = animationRoundedRectangle.beginTime + animationRoundedRectangle.duration
         animationSquare.duration = 0.4
-        animationSquare.fillMode = kCAFillModeForwards
-        animationSquare.isRemovedOnCompletion = false
-        add(animationSquare, forKey: nil)
+        
+        let animationGroup = CAAnimationGroup()
+        animationGroup.animations = [animationRoundedRectangle, animationSquare]
+        animationGroup.delegate = self
+        animationGroup.duration = animationSquare.beginTime + animationSquare.duration
+        animationGroup.fillMode = kCAFillModeForwards
+        animationGroup.isRemovedOnCompletion = false
+        add(animationGroup, forKey: nil)
     }
     
     func animateInitialState() {

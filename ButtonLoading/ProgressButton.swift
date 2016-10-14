@@ -8,13 +8,22 @@
 
 import UIKit
 
-class ProgressButton: UIButton, RectangleProtocol, OvalProtocol {
 
+class ProgressButton: UIButton, RectangleProtocol, OvalProtocol {
+    
     var timer: Timer?
     var color: UIColor!
-    var rectangleLayer: RectangleLayer!
-    var ovalLayer: OvalLayer!
-    var labelLayer: LabelLayer!
+    var rectangleLayer = RectangleLayer()
+    var ovalLayer = OvalLayer()
+    var labelLayer = LabelLayer()
+    var cornerRadius: CGFloat! {
+        get {
+            return rectangleLayer.initialCornerRadius
+        }
+        set {
+            rectangleLayer.initialCornerRadius = newValue
+        }
+    }
     var progress: CGFloat {
         get {
             return ovalLayer.progress
@@ -35,15 +44,12 @@ class ProgressButton: UIButton, RectangleProtocol, OvalProtocol {
         color = backgroundColor
         backgroundColor = UIColor.clear
         
-        rectangleLayer = RectangleLayer()
         rectangleLayer.delegateAnimation = self
         layer.addSublayer(rectangleLayer)
         
-        ovalLayer = OvalLayer()
         ovalLayer.delegateAnimation = self
         layer.addSublayer(ovalLayer)
         
-        labelLayer = LabelLayer()
         layer.addSublayer(labelLayer)
         
         fontTitle = titleLabel?.font
