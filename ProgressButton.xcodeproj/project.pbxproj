@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A897DD201DAA93F80055711A /* RectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A897DD1F1DAA93F80055711A /* RectangleLayer.swift */; };
-		A897DD241DAB6EA40055711A /* OvalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A897DD231DAB6EA40055711A /* OvalLayer.swift */; };
-		A897DD261DABAA6E0055711A /* LabelLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A897DD251DABAA6E0055711A /* LabelLayer.swift */; };
-		A8B0F4661DA9153D000F3549 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B0F4651DA9153D000F3549 /* AppDelegate.swift */; };
-		A8B0F4681DA9153D000F3549 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B0F4671DA9153D000F3549 /* ViewController.swift */; };
-		A8B0F46B1DA9153D000F3549 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B0F4691DA9153D000F3549 /* Main.storyboard */; };
-		A8B0F46D1DA9153D000F3549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B0F46C1DA9153D000F3549 /* Assets.xcassets */; };
-		A8B0F4701DA9153D000F3549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B0F46E1DA9153D000F3549 /* LaunchScreen.storyboard */; };
-		A8B0F4781DA9155F000F3549 /* ProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B0F4771DA9155F000F3549 /* ProgressButton.swift */; };
+		A8B07FD21DB3A54C00A1EA1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B07FC41DB3A54C00A1EA1D /* AppDelegate.swift */; };
+		A8B07FD31DB3A54C00A1EA1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B07FC51DB3A54C00A1EA1D /* Assets.xcassets */; };
+		A8B07FD41DB3A54C00A1EA1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B07FC61DB3A54C00A1EA1D /* LaunchScreen.storyboard */; };
+		A8B07FD51DB3A54C00A1EA1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B07FC81DB3A54C00A1EA1D /* Main.storyboard */; };
+		A8B07FDB1DB3A54C00A1EA1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B07FD11DB3A54C00A1EA1D /* ViewController.swift */; };
+		A8B07FE11DB3A58200A1EA1D /* LabelLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B07FDE1DB3A58200A1EA1D /* LabelLayer.swift */; };
+		A8B07FE21DB3A58200A1EA1D /* OvalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B07FDF1DB3A58200A1EA1D /* OvalLayer.swift */; };
+		A8B07FE31DB3A58200A1EA1D /* RectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B07FE01DB3A58200A1EA1D /* RectangleLayer.swift */; };
+		A8B07FE51DB3A60600A1EA1D /* ProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B07FE41DB3A60600A1EA1D /* ProgressButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A897DD1F1DAA93F80055711A /* RectangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleLayer.swift; sourceTree = "<group>"; };
-		A897DD231DAB6EA40055711A /* OvalLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OvalLayer.swift; sourceTree = "<group>"; };
-		A897DD251DABAA6E0055711A /* LabelLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelLayer.swift; sourceTree = "<group>"; };
+		A8B07FC41DB3A54C00A1EA1D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A8B07FC51DB3A54C00A1EA1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8B07FC71DB3A54C00A1EA1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A8B07FC91DB3A54C00A1EA1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A8B07FCA1DB3A54C00A1EA1D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8B07FD11DB3A54C00A1EA1D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A8B07FDE1DB3A58200A1EA1D /* LabelLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelLayer.swift; sourceTree = "<group>"; };
+		A8B07FDF1DB3A58200A1EA1D /* OvalLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OvalLayer.swift; sourceTree = "<group>"; };
+		A8B07FE01DB3A58200A1EA1D /* RectangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleLayer.swift; sourceTree = "<group>"; };
+		A8B07FE41DB3A60600A1EA1D /* ProgressButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressButton.swift; sourceTree = "<group>"; };
 		A8B0F4621DA9153D000F3549 /* ProgressButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8B0F4651DA9153D000F3549 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A8B0F4671DA9153D000F3549 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A8B0F46A1DA9153D000F3549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A8B0F46C1DA9153D000F3549 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A8B0F46F1DA9153D000F3549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A8B0F4711DA9153D000F3549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8B0F4771DA9155F000F3549 /* ProgressButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressButton.swift; path = ButtonLoading/ProgressButton.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,22 +43,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A897DD1D1DAA88B20055711A /* ProgressButton */ = {
+		A8B07FC31DB3A54C00A1EA1D /* ProgressButton */ = {
 			isa = PBXGroup;
 			children = (
-				A8B0F4771DA9155F000F3549 /* ProgressButton.swift */,
-				A897DD1E1DAA88B20055711A /* Layers */,
+				A8B07FDC1DB3A58200A1EA1D /* ProgressButton */,
+				A8B07FD11DB3A54C00A1EA1D /* ViewController.swift */,
+				A8B07FC41DB3A54C00A1EA1D /* AppDelegate.swift */,
+				A8B07FC51DB3A54C00A1EA1D /* Assets.xcassets */,
+				A8B07FC61DB3A54C00A1EA1D /* LaunchScreen.storyboard */,
+				A8B07FC81DB3A54C00A1EA1D /* Main.storyboard */,
+				A8B07FCA1DB3A54C00A1EA1D /* Info.plist */,
 			);
-			name = ProgressButton;
-			path = LoadingButton;
+			path = ProgressButton;
 			sourceTree = "<group>";
 		};
-		A897DD1E1DAA88B20055711A /* Layers */ = {
+		A8B07FDC1DB3A58200A1EA1D /* ProgressButton */ = {
 			isa = PBXGroup;
 			children = (
-				A897DD1F1DAA93F80055711A /* RectangleLayer.swift */,
-				A897DD231DAB6EA40055711A /* OvalLayer.swift */,
-				A897DD251DABAA6E0055711A /* LabelLayer.swift */,
+				A8B07FE41DB3A60600A1EA1D /* ProgressButton.swift */,
+				A8B07FDD1DB3A58200A1EA1D /* Layers */,
+			);
+			path = ProgressButton;
+			sourceTree = "<group>";
+		};
+		A8B07FDD1DB3A58200A1EA1D /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				A8B07FDE1DB3A58200A1EA1D /* LabelLayer.swift */,
+				A8B07FDF1DB3A58200A1EA1D /* OvalLayer.swift */,
+				A8B07FE01DB3A58200A1EA1D /* RectangleLayer.swift */,
 			);
 			path = Layers;
 			sourceTree = "<group>";
@@ -66,7 +79,7 @@
 		A8B0F4591DA9153C000F3549 = {
 			isa = PBXGroup;
 			children = (
-				A8B0F4641DA9153D000F3549 /* ProgressButton */,
+				A8B07FC31DB3A54C00A1EA1D /* ProgressButton */,
 				A8B0F4631DA9153D000F3549 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,21 +90,6 @@
 				A8B0F4621DA9153D000F3549 /* ProgressButton.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		A8B0F4641DA9153D000F3549 /* ProgressButton */ = {
-			isa = PBXGroup;
-			children = (
-				A897DD1D1DAA88B20055711A /* ProgressButton */,
-				A8B0F4651DA9153D000F3549 /* AppDelegate.swift */,
-				A8B0F4671DA9153D000F3549 /* ViewController.swift */,
-				A8B0F4691DA9153D000F3549 /* Main.storyboard */,
-				A8B0F46C1DA9153D000F3549 /* Assets.xcassets */,
-				A8B0F46E1DA9153D000F3549 /* LaunchScreen.storyboard */,
-				A8B0F4711DA9153D000F3549 /* Info.plist */,
-			);
-			name = ProgressButton;
-			path = ButtonLoading;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +152,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8B0F4701DA9153D000F3549 /* LaunchScreen.storyboard in Resources */,
-				A8B0F46D1DA9153D000F3549 /* Assets.xcassets in Resources */,
-				A8B0F46B1DA9153D000F3549 /* Main.storyboard in Resources */,
+				A8B07FD31DB3A54C00A1EA1D /* Assets.xcassets in Resources */,
+				A8B07FD51DB3A54C00A1EA1D /* Main.storyboard in Resources */,
+				A8B07FD41DB3A54C00A1EA1D /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,32 +165,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A897DD261DABAA6E0055711A /* LabelLayer.swift in Sources */,
-				A897DD241DAB6EA40055711A /* OvalLayer.swift in Sources */,
-				A8B0F4781DA9155F000F3549 /* ProgressButton.swift in Sources */,
-				A897DD201DAA93F80055711A /* RectangleLayer.swift in Sources */,
-				A8B0F4681DA9153D000F3549 /* ViewController.swift in Sources */,
-				A8B0F4661DA9153D000F3549 /* AppDelegate.swift in Sources */,
+				A8B07FE21DB3A58200A1EA1D /* OvalLayer.swift in Sources */,
+				A8B07FE51DB3A60600A1EA1D /* ProgressButton.swift in Sources */,
+				A8B07FE11DB3A58200A1EA1D /* LabelLayer.swift in Sources */,
+				A8B07FDB1DB3A54C00A1EA1D /* ViewController.swift in Sources */,
+				A8B07FD21DB3A54C00A1EA1D /* AppDelegate.swift in Sources */,
+				A8B07FE31DB3A58200A1EA1D /* RectangleLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A8B0F4691DA9153D000F3549 /* Main.storyboard */ = {
+		A8B07FC61DB3A54C00A1EA1D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A8B0F46A1DA9153D000F3549 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A8B0F46E1DA9153D000F3549 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A8B0F46F1DA9153D000F3549 /* Base */,
+				A8B07FC71DB3A54C00A1EA1D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A8B07FC81DB3A54C00A1EA1D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8B07FC91DB3A54C00A1EA1D /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -294,7 +292,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 27EMTZ4TK6;
-				INFOPLIST_FILE = ButtonLoading/Info.plist;
+				INFOPLIST_FILE = ProgressButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kh.ButtonLoading;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -307,7 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 27EMTZ4TK6;
-				INFOPLIST_FILE = ButtonLoading/Info.plist;
+				INFOPLIST_FILE = ProgressButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kh.ButtonLoading;
 				PRODUCT_NAME = "$(TARGET_NAME)";
