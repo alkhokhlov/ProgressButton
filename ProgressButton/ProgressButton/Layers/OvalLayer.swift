@@ -12,7 +12,7 @@ protocol OvalProtocol: class {
     func ovalAnimationDidStop()
 }
 
-class OvalLayer: CAShapeLayer, CAAnimationDelegate {
+final class OvalLayer: CAShapeLayer, CAAnimationDelegate {
     
     var parentBounds: CGRect!
     var ovalFrame: CGRect!
@@ -69,7 +69,7 @@ class OvalLayer: CAShapeLayer, CAAnimationDelegate {
         let animationRotate = CABasicAnimation(keyPath: "transform.rotation")
         animationRotate.delegate = self
         animationRotate.fromValue = previousState
-        animationRotate.toValue = CGFloat(M_PI)/CGFloat(50.0)*progress
+        animationRotate.toValue = CGFloat(Double.pi)/CGFloat(50.0)*progress
         animationRotate.duration = 0.5
         animationRotate.fillMode = kCAFillModeForwards
         animationRotate.isRemovedOnCompletion = false

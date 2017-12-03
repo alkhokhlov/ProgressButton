@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
     @IBOutlet var button: ProgressButton!
     var timer: Timer!
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
                                      repeats: true)
     }
     
-    func slowIncrementor() {
+    @objc func slowIncrementor() {
         if button.progress == 99 {
             timer?.invalidate()
         }

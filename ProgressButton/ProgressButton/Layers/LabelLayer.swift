@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LabelLayer: CATextLayer {
+final class LabelLayer: CATextLayer {
     
     override init() {
         super.init()
@@ -26,7 +26,7 @@ class LabelLayer: CATextLayer {
         frame = CGRect(x: 0, y: (parentBounds.size.height-titleFont.pointSize)/2, width: parentBounds.size.width, height: titleFont.pointSize)
         string = text
         fontSize = titleFont.pointSize - 2
-        font = CTFontCreateWithName(titleFont.fontName as CFString?, fontSize, nil)
+        font = CTFontCreateWithName((titleFont.fontName as CFString?)!, fontSize, nil)
         foregroundColor = color.cgColor
         isWrapped = true
         alignmentMode = kCAAlignmentCenter

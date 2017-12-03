@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ProgressButton: UIButton, RectangleProtocol, OvalProtocol {
+final class ProgressButton: UIButton, RectangleProtocol, OvalProtocol {
     
     private let checkMarkPlusFontSize:CGFloat = 8.0
     private let timerIntervalAnimation = 0.2
@@ -43,7 +43,6 @@ class ProgressButton: UIButton, RectangleProtocol, OvalProtocol {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        layer.masksToBounds = true
         color = backgroundColor
         backgroundColor = UIColor.clear
         

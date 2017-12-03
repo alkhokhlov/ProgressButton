@@ -12,7 +12,7 @@ protocol RectangleProtocol: class {
     func rectangleAnimationDidStop()
 }
 
-class RectangleLayer: CAShapeLayer, CAAnimationDelegate {
+final class RectangleLayer: CAShapeLayer, CAAnimationDelegate {
     
     var initialCornerRadius: CGFloat = 1.0
     var parentBounds: CGRect!
